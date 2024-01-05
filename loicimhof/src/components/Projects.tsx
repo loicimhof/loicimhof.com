@@ -13,13 +13,13 @@ const ProjectsOverview = () => {
     {
       logo: "https://img.icons8.com/color/48/000000/html-5.png",
       name: "loicimhof.com",
-      description: "This website",
+      description: "My personal portfolio",
       link: "https://www.w3schools.com/html/",
     },
     {
       logo: "https://img.icons8.com/color/48/000000/html-5.png",
       name: "miniipa",
-      description: "A storage management tool with focus on private use",
+      description: "A storage management tool",
       link: "https://github.com/loicimhof/miniipa",
     },
     {
@@ -50,14 +50,15 @@ const ProjectsOverview = () => {
       >
         <Grid gutter="lg">
           {projects.map((project, index) => (
-            <GridCol span={4}>
-              <Card // make height of card same for all cards
+            <GridCol span={3}>
+              <Card
                 shadow="xs"
                 padding="lg"
                 style={{
-                  width: "80%",
+                  //   width: "80%",
                   boxShadow: "0 0 0 1px teal ",
                   borderRadius: 15,
+                  height: "200px",
                 }}
                 onClick={() => (window.location.href = project.link)}
               >
