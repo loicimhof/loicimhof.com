@@ -19,7 +19,6 @@ function App() {
           <h1>Loïc Imhof</h1>
           <About />
           <Resume />
-
           <SkillsOverview />
         </header>
       </div>

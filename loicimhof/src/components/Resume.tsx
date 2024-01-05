@@ -2,9 +2,9 @@ import { List, Paper, Text } from "@mantine/core";
 
 const WorkStationOverview = () => {
   const workStations = [
-    { yearRange: "2015 - 2017", title: "Company A" },
-    { yearRange: "2017 - 2019", title: "Company B" },
-    { yearRange: "2019 - Present", title: "Company C" },
+    { yearRange: "2011 - 2020", title: "Brunnmattschule Bern" },
+    { yearRange: "2020 - 2021", title: "Gymnasium Neufeld" },
+    { yearRange: "2021 - Present", title: "Noser Young Professionals AG" },
   ];
 
   return (
