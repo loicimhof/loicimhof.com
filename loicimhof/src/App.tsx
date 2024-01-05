@@ -1,10 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
 import SkillsOverview from "./components/Skills";
-import { createTheme, Grid, MantineProvider } from "@mantine/core";
+import { createTheme, MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 import About from "./components/About";
 import Resume from "./components/Resume";
+import ProjectsOverview from "./components/Projects";
 
 const theme = createTheme({
   primaryColor: "teal",
@@ -20,6 +21,7 @@ function App() {
           <About />
           <Resume />
           <SkillsOverview />
+          <ProjectsOverview />
         </header>
       </div>
     </MantineProvider>
