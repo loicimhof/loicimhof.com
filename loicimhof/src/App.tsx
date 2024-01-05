@@ -6,6 +6,7 @@ import "@mantine/core/styles.css";
 import About from "./components/About";
 import Resume from "./components/Resume";
 import ProjectsOverview from "./components/Projects";
+import Hello from "./components/Hello";
 
 const theme = createTheme({
   primaryColor: "teal",
@@ -17,6 +18,7 @@ function App() {
     <MantineProvider theme={theme} defaultColorScheme="dark">
       <div className="App">
         <header className="App-header">
+          <Hello />
           <h1>Loïc Imhof</h1>
           <About />
           <Resume />
