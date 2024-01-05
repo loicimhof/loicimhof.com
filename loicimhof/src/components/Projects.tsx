@@ -39,13 +39,10 @@ const ProjectsOverview = () => {
     <>
       <h2>My recent work</h2>
       <Card
-        shadow="xs"
-        padding="lg"
         style={{
           width: "80%",
-          boxShadow: "0 0 0 1px teal ",
-          borderRadius: 15,
           marginBottom: "100px",
+          backgroundColor: "transparent",
         }}
       >
         <Grid gutter="lg">
@@ -55,7 +52,6 @@ const ProjectsOverview = () => {
                 shadow="xs"
                 padding="lg"
                 style={{
-                  //   width: "80%",
                   boxShadow: "0 0 0 1px teal ",
                   borderRadius: 15,
                   height: "200px",
