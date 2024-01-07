@@ -1,4 +1,5 @@
-import { List, Paper, Text } from "@mantine/core";
+import { Card, Grid, List, Paper, Text } from "@mantine/core";
+import Languages from "./Languages";
 
 const WorkStationOverview = () => {
   const workStations = [
@@ -8,19 +9,40 @@ const WorkStationOverview = () => {
   ];
 
   return (
-    <Paper>
-      {workStations.map((workStation, index) => (
-        <div key={index} style={{ display: "flex", marginBottom: "20px" }}>
-          <List>
-            <List.Item>
-              <Text size="lg">
-                {workStation.yearRange} : {workStation.title}
-              </Text>
-            </List.Item>
-          </List>
-        </div>
-      ))}
-    </Paper>
+    <Card
+      padding="lg"
+      style={{
+        width: "80%",
+        marginBottom: "100px",
+        justifyContent: "center",
+        marginTop: "50px",
+        backgroundColor: "transparent",
+      }}
+    >
+      <Grid>
+        <Grid.Col span={6}>
+          <Paper>
+            {workStations.map((workStation, index) => (
+              <div
+                key={index}
+                style={{ display: "flex", marginBottom: "20px" }}
+              >
+                <List>
+                  <List.Item>
+                    <Text size="lg">
+                      {workStation.yearRange} : {workStation.title}
+                    </Text>
+                  </List.Item>
+                </List>
+              </div>
+            ))}
+          </Paper>
+        </Grid.Col>
+        <Grid.Col span={6}>
+          <Languages />
+        </Grid.Col>
+      </Grid>
+    </Card>
   );
 };
 
