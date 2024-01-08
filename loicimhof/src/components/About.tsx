@@ -12,12 +12,17 @@ import {
 const About = () => {
   return (
     <Card
-      shadow="xs"
+      // shadow="xs"
       padding="lg"
-      style={{ width: "80%", boxShadow: "0 0 0 1px teal ", borderRadius: 15 }}
+      style={{
+        width: "80%",
+        backgroundColor: "transparent",
+        marginBottom: 100,
+        marginTop: 30,
+      }}
     >
       <Grid gutter="lg">
-        <GridCol span={6} style={{ display: "flex", justifyContent: "center" }}>
+        <GridCol span={5} style={{ display: "flex", justifyContent: "center" }}>
           <Image
             src="../passfoto.jpg"
             alt="Photo"
@@ -33,40 +38,40 @@ const About = () => {
             NoserYoung. I love technology and always want to be up to date with
             the latest advancements.
           </Text>
-          <Box
-            style={{
-              display: "flex",
-              alignContent: "flex-end",
-              height: "100%",
-            }}
-          >
-            <Button
-              component="a"
-              href="https://twitter.com"
-              variant="outline"
-              left="twitter"
-            >
-              Twitter
-            </Button>
-            <Button
-              component="a"
-              href="https://github.com"
-              variant="outline"
-              left="github"
-            >
-              GitHub
-            </Button>
-            <Button
-              component="a"
-              href="https://linkedin.com"
-              variant="outline"
-              left="linkedin"
-            >
-              LinkedIn
-            </Button>
-          </Box>
         </GridCol>
       </Grid>
+      <Box
+        style={{
+          display: "flex",
+          justifyContent: "flex-end",
+          marginRight: 30,
+        }}
+      >
+        <Button
+          component="a"
+          href="https://twitter.com"
+          variant="outline"
+          left="twitter"
+        >
+          Twitter
+        </Button>
+        <Button
+          component="a"
+          href="https://github.com"
+          variant="outline"
+          left="github"
+        >
+          GitHub
+        </Button>
+        <Button
+          component="a"
+          href="https://linkedin.com"
+          variant="outline"
+          left="linkedin"
+        >
+          LinkedIn
+        </Button>
+      </Box>
     </Card>
   );
 };
