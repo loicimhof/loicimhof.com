@@ -21,6 +21,7 @@ const WorkStationOverview = () => {
     >
       <Grid>
         <Grid.Col span={6}>
+          <h3>Education / Workstations</h3>
           <Paper>
             {workStations.map((workStation, index) => (
               <div
