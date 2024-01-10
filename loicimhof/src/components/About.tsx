@@ -12,7 +12,6 @@ import {
 const About = () => {
   return (
     <Card
-      // shadow="xs"
       padding="lg"
       style={{
         width: "80%",
